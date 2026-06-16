@@ -1,0 +1,6 @@
+profiles.yml
+target/
+logs/
+.env
+*.pyc
+__pycache__/

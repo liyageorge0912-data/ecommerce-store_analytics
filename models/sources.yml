@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    database: ecommerce_store
+    schema: raw
+    tables:
+      - name: customers
+      - name: customer_address
+      - name: campaigns
+      - name: customer_mailings
+      - name: event_basket
