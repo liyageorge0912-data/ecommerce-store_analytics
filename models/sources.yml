@@ -6,7 +6,45 @@ sources:
     schema: raw
     tables:
       - name: customers
+        columns:
+          - name: customer_id
+            tests:
+              - not_null
+              - unique
+          - name: hashed_email
+            tests:
+              - not_null
+              - unique
+
       - name: customer_address
+    
+
       - name: campaigns
+        columns:
+          - name: campaign_id
+            tests:
+              - not_null
+              - unique
+
       - name: customer_mailings
+        columns:
+          - name: mailing_id
+            tests:
+              - not_null
+              - unique
+          - name: campaign_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('raw', 'campaigns')
+                  field: campaign_id
+
       - name: event_basket
+        columns:
+          - name: order_id
+            tests:
+              - not_null
+              - unique
+          - name: order_amount
+            tests:
+              - not_null
