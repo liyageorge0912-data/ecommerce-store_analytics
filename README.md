@@ -2,6 +2,9 @@
 
 This project moves business logic out of the BI tool and into version-controlled code. Every transformation, every metric definition, every business rule lives in dbt tracked by Git, validated by tests, orchestrated by Dagster. The dashboard becomes a thin viewing layer that reads from a tested, versioned mart table. 
 
+# Business Problem
+The organisation would be able to measure the campaign performance of the customers who were sent a campaign and who converted. The stakeholders would be able to filter the dates , attribution window and would be able to monitor the campaign performance on a daily basis.
+
 ### Stack
 
 | Layer | Tool | Purpose |
@@ -39,7 +42,7 @@ The pipeline follows a layered architecture with four schemas:
 - Join key: `hashed_email` (SHA-256 of normalised email) + `company_id`
 - Attribution rule: Most recent email before the order gets credit
 - Maximum window: 90 days (capped in the intermediate model)
-- Dynamic filtering: QuickSight parameter lets users select 7, 14, 30, or 60 days at query time
+- Dynamic filtering: QuickSight parameter lets users select attribution window
 
 - ### Design Decisions
 
