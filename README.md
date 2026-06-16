@@ -17,6 +17,9 @@ The organisation would be able to measure the campaign performance of the custom
 
 ## Data Model
 
+
+<img width="674" height="378" alt="image" src="https://github.com/user-attachments/assets/b40b4f6d-697c-454c-93f3-18ae4edae124" />
+
 ### Schema Design
 
 The pipeline follows a layered architecture with four schemas:
