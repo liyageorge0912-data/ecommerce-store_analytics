@@ -47,6 +47,10 @@ The pipeline follows a layered architecture with four schemas:
 - Maximum window: 90 days (capped in the intermediate model)
 - Dynamic filtering: QuickSight parameter lets users select attribution window
 
+### Dashboard
+
+![Uploading image.png…]()
+
 - ### Design Decisions
 
 - **hashed_email as logical FK** - Not enforced at database level. Enforced by dbt relationship tests. If a mailing references a non-existent customer, the test fails and the pipeline stops.
