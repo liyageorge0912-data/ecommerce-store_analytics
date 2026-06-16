@@ -1,6 +1,7 @@
 {{
     config(
         materialized='table',
+        schema='marts',
         indexes=[
             {'columns': ['hashed_email']},
             {'columns': ['campaign_id']},
