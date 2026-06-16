@@ -49,7 +49,8 @@ The pipeline follows a layered architecture with four schemas:
 
 ### Dashboard
 
-![Uploading image.png…]()
+<img width="421" height="317" alt="image" src="https://github.com/user-attachments/assets/7c68af04-ff7e-4396-8035-20e043bd5a18" />
+
 
 - ### Design Decisions
 
